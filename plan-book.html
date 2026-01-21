@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Plan & Book | Visit Taniti</title>
+  <meta name="description" content="Request lodging and activity bookings for your Taniti vacation using our trip-planning prototype.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="header">
+  <div class="container nav">
+    <a class="brand" href="index.html" aria-label="Visit Taniti Home">
+      <span class="brand-mark" aria-hidden="true"></span>
+      <span class="brand-name">Visit Taniti</span>
+    </a>
+    <nav class="navlinks" aria-label="Primary Navigation">
+      <a href="index.html">Home</a>
+      <a href="lodging.html">Lodging</a>
+      <a href="things-to-do.html">Things to Do</a>
+      <a href="dining.html">Dining</a>
+      <a href="transportation.html">Transportation</a>
+      <a href="plan-book.html" aria-current="page">Plan & Book</a>
+      <a href="faq.html">FAQ</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <div class="actions">
+      <form class="search" role="search">
+        <span aria-hidden="true">🔎</span>
+        <input type="search" placeholder="Search" aria-label="Search site">
+      </form>
+      <a class="btn" href="plan-book.html">Start planning</a>
+    </div>
+  </div>
+</header>
+
+<main id="main-content">
+  <section class="section" aria-labelledby="plan-title">
+    <div class="container">
+      <header class="section-header">
+        <p class="kicker">Plan Your Trip</p>
+        <h1 id="plan-title">Plan &amp; Book <span class="badge">(Prototype)</span></h1>
+        <p>Use this form to request lodging and activities. In a full build, this would connect to vetted local providers.</p>
+      </header>
+
+      <div class="two-col">
+        
+        <form class="form" action="#" method="get">
+          <div class="form-group">
+            <label for="dates">Travel dates</label>
+            <input id="dates" name="dates" type="text" placeholder="e.g., Mar 10–Mar 16" required>
+          </div>
+
+          <div class="two-col">
+            <div class="form-group">
+              <label for="party">Party size</label>
+              <input id="party" name="party" type="number" min="1" value="2">
+            </div>
+            <div class="form-group">
+              <label for="budget">Budget preference</label>
+              <select id="budget" name="budget">
+                <option value="" disabled selected>Select budget</option>
+                <option value="budget">Budget</option>
+                <option value="mid">Mid-range</option>
+                <option value="premium">Resort / Premium</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="lodging">Preferred lodging</label>
+            <select id="lodging" name="lodging">
+              <option value="hostel">Hostel</option>
+              <option value="family">Family-owned hotel</option>
+              <option value="bb">Bed &amp; breakfast</option>
+              <option value="resort">Four-star resort</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="activities">Top activities (Multiple)</label>
+            <select id="activities" name="activities" multiple size="5" aria-describedby="activity-tip">
+              <option>Beach day</option>
+              <option>Rainforest hike</option>
+              <option>Volcano visit</option>
+              <option>Snorkeling</option>
+              <option>Zip-lining</option>
+              <option>Fishing tour</option>
+              <option>Island bus/boat tour</option>
+            </select>
+            <small id="activity-tip">Tip: Hold Ctrl (Win) or Command (Mac) to select multiple.</small>
+          </div>
+
+          <div class="form-group">
+            <label for="notes">Special requests or notes</label>
+            <textarea id="notes" name="notes" placeholder="Accessibility needs, transportation preferences, etc."></textarea>
+          </div>
+
+          <div class="button-group">
+            <button class="btn" type="submit">Submit Request</button>
+            <a class="btn secondary" href="faq.html">Check FAQ first</a>
+          </div>
+        </form>
+
+        
+        <aside class="sidebar">
+          <div class="card">
+            <h3>Booking Guidance</h3>
+            <ul class="list">
+              <li><strong>Holidays:</strong> Many attractions and restaurants may close on national holidays.</li>
+              <li><strong>Language:</strong> English is limited in rural areas; local dialect is common.</li>
+              <li><strong>Safety:</strong> Violent crime is rare; please use standard precautions against pickpocketing.</li>
+            </ul>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <p><strong>Visit Taniti</strong> — Tourism information and trip-planning prototype.</p>
+    <p>Currency: U.S. dollar, Euro, and Yen accepted. Public buses run 5 a.m.–11 p.m.</p>
+    <p><small>Prototype note: Booking submissions are not processed; for testing only.</small></p>
+  </div>
+</footer>
+
+</body>
+</html>

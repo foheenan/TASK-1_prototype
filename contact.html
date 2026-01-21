@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Contact | Visit Taniti</title>
+  <meta name="description" content="Contact the Taniti tourism board for help with transportation, lodging, and activities.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="header">
+  <div class="container nav">
+    <a class="brand" href="index.html" aria-label="Visit Taniti Home">
+      <span class="brand-mark" aria-hidden="true"></span>
+      <span class="brand-name">Visit Taniti</span>
+    </a>
+    <nav class="navlinks" aria-label="Primary Navigation">
+      <a href="index.html">Home</a>
+      <a href="lodging.html">Lodging</a>
+      <a href="things-to-do.html">Things to Do</a>
+      <a href="dining.html">Dining</a>
+      <a href="transportation.html">Transportation</a>
+      <a href="plan-book.html">Plan & Book</a>
+      <a href="faq.html">FAQ</a>
+      <a href="contact.html" aria-current="page">Contact</a>
+    </nav>
+    <div class="actions">
+      <form class="search" role="search">
+        <span aria-hidden="true">🔎</span>
+        <input type="search" placeholder="Search" aria-label="Search site">
+      </form>
+      <a class="btn" href="plan-book.html">Start planning</a>
+    </div>
+  </div>
+</header>
+
+<main id="main-content">
+  <section class="section" aria-labelledby="contact-heading">
+    <div class="container">
+      <header class="section-header">
+        <p class="kicker">Help & Support</p>
+        <h1 id="contact-heading">Contact <span class="badge"></span></h1>
+        <p>In a full site, this page would include a staffed hotline and real-time chat. For the prototype, it supports content clarity testing.</p>
+      </header>
+
+      <div class="two-col">
+        
+        <form class="form" action="#" method="get" aria-describedby="form-notice">
+          <div class="form-group">
+            <label for="name">Full Name</label>
+            <input id="name" name="name" type="text" placeholder="Your name" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input id="email" name="email" type="email" placeholder="you@example.com" required>
+          </div>
+          <div class="form-group">
+            <label for="topic">Inquiry Topic</label>
+            <select id="topic" name="topic">
+              <option value="transport">Transportation</option>
+              <option value="lodging">Lodging</option>
+              <option value="activities">Activities</option>
+              <option value="dining">Dining</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="msg">Message</label>
+            <textarea id="msg" name="msg" placeholder="How can we help?" required></textarea>
+          </div>
+          <button class="btn" type="submit">Send Message</button>
+          <p id="form-notice" style="font-size: 13px; color: var(--muted); margin-top: 12px;">
+            Prototype note: Forms are for testing and do not send data.
+          </p>
+        </form>
+
+      
+        <aside class="sidebar">
+          <article class="card">
+            <h3>Emergency &amp; Medical</h3>
+            <p>If you need urgent assistance on-island, the main hospital features multilingual staff and 24/7 care.</p>
+          </article>
+
+          <article class="card">
+            <h3>Getting to Us</h3>
+            <ul class="list">
+              <li><strong>By Air:</strong> Daily flights to Taniti Airport.</li>
+              <li><strong>By Sea:</strong> Weekly cruise arrivals at Yellow Leaf Bay.</li>
+            </ul>
+          </article>
+        </aside>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <p><strong>Visit Taniti</strong> — Tourism information and trip-planning prototype.</p>
+    <p>Currency: USD, EUR, and JPY accepted. Public buses run 5 a.m.–11 p.m.</p>
+    <p><small>Information accurate for 2026 travel planning.</small></p>
+  </div>
+</footer>
+
+</body>
+</html>
